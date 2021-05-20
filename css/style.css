@@ -1,0 +1,181 @@
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+*{
+    box-sizing: border-box;
+}
+
+.contenedor{
+    width: 1300px;
+    height: 1300px;
+    margin: auto;
+    padding: 1em;
+    background-color: white;
+    border-radius: 1em;
+}
+
+header{
+    float: left;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    border-radius: 1em;
+    margin-bottom: 20px;
+    padding: 30px 15px;
+}
+
+.contenido_header img{
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+
+.contenido_header .texto{
+    width: 75%;
+    height: 100%;
+    text-align: center;
+    float: right;
+    margin-top: 25px;
+}
+
+
+.contenido_header .texto h1{
+    color: darkmagenta;
+    font-size: 45px;
+    margin: 0 auto;
+}
+
+.contenido_header .texto p{
+    color: darkmagenta;
+    font-size: 25px;
+    margin: 0 auto;
+
+}
+
+nav{
+    float: right;
+    height: 20%;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    border-radius: 1em;
+    margin-bottom: 20px;
+    padding: 50px 10px;
+}
+
+nav .contenido_nav{
+    float: left;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+nav .contenido_nav .card1{
+    margin-top: 20px;
+    float: left;
+    width: 23%;
+    height: 80%;
+    background-image: url("../img/urnaelectronica.jpg");
+    padding: 0px 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-size: 330px 150px;
+}
+
+nav .contenido_nav .card2{
+    margin-top: 20px;
+    float: left;
+    width: 23%;
+    height: 80%;
+    background-image: url("../img/voto_extranjero.jpg");
+    padding: 0px 10px;
+    margin-right: 20px;
+    background-size: 330px 150px;
+}
+nav .contenido_nav .card3{
+    margin-top: 20px;
+    float: left;
+    width: 23%;
+    height: 80%;
+    background-image: url("../img/debates.jpg");
+    padding: 0px 10px;
+    margin-right: 20px;
+    background-size: 330px 150px;
+}
+
+nav .contenido_nav .card4{
+    margin-top: 20px;
+    float: left;
+    width: 23%;
+    height: 80%;
+    background-image: url("../img/candidatos.jpg");
+    padding: 0px 10px;
+    background-size: 330px 150px;
+}
+
+
+
+
+.seccion01{
+    float: left;
+    width: 100%;
+    padding: 50px 10px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 1em;
+
+}
+
+.seccion01 .contenido .izquierdo{
+    width: 45%;
+    float: left;
+    padding: 0px 10px;
+}
+
+.seccion01 .contenido .derecho .card{
+    width: 55%;
+    float: left;
+    padding: 0px 10px;
+}
+
+footer{
+    float: left;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    border-radius: 1em;
+    margin-bottom: 20px;
+    padding: 50px 10px;
+    border-style: solid;
+    border-color: mediumpurple;
+}
+
+footer .contenidof{
+    background-color: white;
+    float: left;
+    width: 100%;
+    border-radius: 1em;
+
+}
+
+footer .contenidof .card{
+    float: left;
+    width: 33%;
+    padding: 0px 10px;
+}
+
+.footer .contenidof .card .box{
+    background-color: gray;
+    font-size: 30px;
+    color: white;
+    padding: 60px 15px;
+}
+
