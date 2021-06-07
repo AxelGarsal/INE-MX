@@ -1,13 +1,28 @@
+/*PALETA DE COLORES
+MORADO PRINCIPAL OSCURO   #7B1FA2
+MORADO PRINCIPAL CLARO    #E1BEE7
+MORADO PRIMARIO           #9C27B0
+BLACO PARA TEXTO E ICONOS #FFFFFF
+ROSA PARA ACENTUAR        #FF4081
+NEGRO TEXTO PRIMARIO      #212121
+TEXTO SECUNDARIO          #757575
+COLOR PARA DIVISIONES     #BDBDBD
+
+*/
+
+
 html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
 }
 
-body{
+body .p{
     margin: 0;
     padding: 0;
-    background-color: white;
+    /*background-color: white;*/
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+
 }
 *{
     box-sizing: border-box;
@@ -18,15 +33,23 @@ body{
     height: 1300px;
     margin: auto;
     padding: 1em;
-    background-color: white;
+    /*background-color: white;*/
+    /*background: #834d9b;  /* fallback for old browsers */
+    /*background: -webkit-linear-gradient(to right, #d04ed6, #834d9b); */ /* Chrome 10-25, Safari 5.1-6 */
+    /*background: linear-gradient(to right, #d04ed6, #834d9b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
     border-radius: 1em;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 header{
     float: left;
     width: 100%;
     text-align: center;
-    background-color: white;
+    /*background-color: white;*/
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
     border-radius: 1em;
     margin-bottom: 20px;
     padding: 30px 15px;
@@ -182,21 +205,154 @@ footer .contenidof .card{
 
 /*---------------------PAGINA URNA ELECTRONICA ---------------------*/
 
+.urna{
+    background: #f4c4f3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fc67fa, #f4c4f3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fc67fa, #f4c4f3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
 .contenedorU{
-    width: auto;
-    height: 1300px;
+    width: 100%;
+    padding: 20px;
     margin: auto;
-    padding: 1em;
-    background-color: black;
-    border-radius: 1em;
+    margin-top: 100px
 }
 
-header .headerU{
-    float: left;
+.panel_principal{
     width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+
+}
+
+.panel_trasero{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    /*background-color: lightpink;*/
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+
+.panel_trasero div{
+    margin: 100px 40px;
+    color: white;
+    transition: all 500ms;
+}
+
+.panel_trasero div p,
+.panel_trasero div button{
+    margin-top: 30px;
+}
+
+.panel_trasero{
+    font-weight: 400;
+    font-size: 25px;
+}
+.panel_trasero button{
+    padding: 10px 40px;
+    border: 2px solid white;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 600px;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    transition: all 300ems;
+}
+
+.panel_trasero button:hover{
+    background: aquamarine;
+    color: #222222;
+}
+
+/*PARA LOS FROMULARIOS*/
+.panel_de_registro{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -185px;
+    left: 10px;
+
+    /*amimacion de movimiento*/
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+
+}
+.panel_de_registro form{
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #9C27B0;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.panel_de_registro form h2{
+    font-size: 30px;
     text-align: center;
-    background-color: black;
-    border-radius: 1em;
     margin-bottom: 20px;
-    padding: 30px 15px;
+    color: white;
+}
+
+.panel_de_registro form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: aliceblue;
+    font-size: 15px;
+    outline: none;
+}
+
+.panel_de_registro form button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 15px;
+    background: #fc67fa;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+.form_login{
+    opacity: 1;
+    display: block;
+}
+
+.form_registro{
+    display: none;
+}
+
+/*PARA LA PARTE RESPONSIVA */
+
+@media screen and(max-width: 850px){
+
+    .contenedorU{
+        margin-top: 50px;
+    }
+    .panel_trasero{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+    .panel_trasero div{
+        margin: 0px;
+        position: absolute;
+    }
+    /*FORMULARIO*/
+
+    .panel_de_registro{
+        top: -10px;
+        left: -5px;
+        margin: auto;
+    }
+
+    .panel_de_registro form{
+        position: relative;
+    }
+
 }

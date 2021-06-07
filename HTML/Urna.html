@@ -2,28 +2,51 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Urna Electronica</title>
 </head>
-<body>
-<main class="contenedorU">
-    <header class="headerU">
-        <div class="contenido_U">
-            <div class="hederU_texto">
-                INE
-                URNA ELECTRONICA
+<body class="urna">
+    <main class="contenedorU">
+
+        <div class="panel_principal">
+            <div class="panel_trasero">
+                <div class="panel_login">
+                    <h3>¿Ya tienes cuenta?</h3>
+                    <p>Inicia sesion para continuar</p>
+                    <button id="entrar"> Iniciar sesión</button>
+                </div>
+                <div class="panel_register">
+                        <h3>¿Aún no tienes cuenta?</h3>
+                        <p>Registrate para continuar</p>
+                        <button id="registro">Regístrate aquí</button>
+                </div>
             </div>
+            <div class="panel_de_registro">
+                <form action=" " class="form_login">
+                    <h2>Iniciar Sesión</h2>
+                    <input type="text" placeholder="Usuario">
+                    <input type="password" placeholder="contraseña">
+                    <button>Iniciar sesión</button>
+                </form>
+
+                <form action=" " class="form_registro">
+                    <h2>Registrarse</h2>
+                    <input type="text" placeholder="Nombre(s)">
+                    <input type="text" placeholder="Apellido Paterno">
+                    <input type="text" placeholder="Apellido Materno">
+                    <input type="text" placeholder="CURP">
+                    <input type="text" placeholder="Estado">
+                    <input type="text" placeholder="Municipio">
+                    <input type="text" placeholder="Sección">
+                    <input type="password" placeholder="contraseña">
+                    <button>Registrate</button>
+                </form>
+
+
             </div>
-    </header>
-    <nav class="nav_urna">
-       <ul id="menu2">
-           <li>Clave</li>
-           <li>Contraseña</li>
-           <li>Iniciar sesion</li>
-           <li>Registrate</li>
-           <li>Olvide mi contraseña</li>
-       </ul>
-    </nav>
-</main>
+        </div>
+    </main>
+    <script SRC="../JS/main.js"></script>
 </body>
 </html>
